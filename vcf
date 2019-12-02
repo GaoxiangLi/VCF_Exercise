@@ -1,0 +1,54 @@
+import argparse
+
+
+def main(args):
+    sort = args.sort
+    key = args.key
+    filename = args.filename
+    order = args.order
+    saved_path = args.saved_path
+    if not filename.endswith('.vcf'):
+        # check file format
+        print('please input vcf format file')
+        quit()
+    if order == 'AES':
+        order = 0
+    elif order == 'DES':
+        order = 1
+    if order != 0 and order != 1:
+        print('please input AES or DES to set order')
+        quit()
+    if sort:
+        import vcfsort
+        vcfsort.sort(filename, key, order, saved_path)
+
+
+def parse_arguments(parser):
+    parser.add_argument('--sort', dest='sort', action='store_true', help='Use this option to do sort operation')
+    parser.set_defaults(train=False)
+
+    parser.add_argument('--filename', default='./data/small_demo.vcf',
+                        help='VCF file path')
+
+    # parser.add_argument('--filename', default='./data/test1.vcf',
+    #                     help='VCF file path')
+    parser.add_argument('--saved_path', default='./data/',
+                        help='saved VCF file path')
+
+    parser.add_argument('--key', help='The key to be sorted')
+
+    parser.add_argument('--order', default='AES',
+                        help='Use this option to chose ascending order or descending(default AES)')
+
+    parser.set_defaults(evaluation=False)
+
+    args = parser.parse_args()
+
+    return args
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='VCF')
+    args = parse_arguments(parser)
+    main(args)
