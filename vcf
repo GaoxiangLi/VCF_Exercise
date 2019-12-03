@@ -2,15 +2,20 @@ import argparse
 
 
 def main(args):
+    # get parameters from console inputs
     sort = args.sort
     key = args.key
     filename = args.filename
     order = args.order
     saved_path = args.saved_path
+
+    # check inputs
+
     if not filename.endswith('.vcf'):
         # check file format
         print('please input vcf format file')
         quit()
+
     if order == 'AES':
         order = 0
     elif order == 'DES':
@@ -18,6 +23,8 @@ def main(args):
     if order != 0 and order != 1:
         print('please input AES or DES to set order')
         quit()
+
+    # call sort function
     if sort:
         import vcfsort
         vcfsort.sort(filename, key, order, saved_path)
