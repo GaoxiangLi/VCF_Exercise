@@ -15,8 +15,11 @@ def sort(filename, key, order, saved_path):
         for j in range(6, len(data[i]) - 1):
             if data[i][j].startswith(str_1):
                 num = data[i][j].replace(str_1, '')
-                num = float(num)
-                data[i].insert(0, num)
+                if num != '.':
+                    num = float(num)
+                    data[i].insert(0, num)
+                else:
+                    data[i].insert(0, 0.0)
                 flag = 1
                 break
         if flag == 0:  # to check if key is missing

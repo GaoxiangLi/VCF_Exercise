@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0e4e66e-b592-4dfb-a368-d21cf08868d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vcfsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/vcfsort.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +21,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/small_demo.vcf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8252" />
+            <state relative-caret-position="393">
+              <caret line="440" column="2453" selection-start-line="440" selection-start-column="2447" selection-end-line="440" selection-end-column="2453" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -33,16 +35,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vcfsort.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/demo1.vcf">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="62" lean-forward="true" selection-start-column="62" selection-end-column="62" />
+              <caret column="62" selection-start-column="62" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -57,10 +63,11 @@
       <list>
         <option value="$PROJECT_DIR$/vcf" />
         <option value="$PROJECT_DIR$/data/demo1.vcf" />
+        <option value="$PROJECT_DIR$/vcfsort.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="616" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -124,7 +131,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
@@ -146,16 +154,17 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vcfreader.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vcfsort.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/demo1.vcf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="62" lean-forward="true" selection-start-column="62" selection-end-column="62" />
+          <caret column="62" selection-start-column="62" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/small_demo.vcf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="440" column="2453" selection-start-line="440" selection-start-column="2447" selection-end-line="440" selection-end-column="2453" />
         </state>
       </provider>
     </entry>
@@ -166,9 +175,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/small_demo.vcf">
+    <entry file="file://$PROJECT_DIR$/vcfreader.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vcfsort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8252" />
+        <state relative-caret-position="304">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
       </provider>
     </entry>
   </component>
