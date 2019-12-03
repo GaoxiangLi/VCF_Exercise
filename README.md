@@ -2,9 +2,11 @@
 
 Shawn Li 
 
-  function:sort keyvalue in the VCF file
-  Python version:3.68
-  No other libiary needed.
+
+    function:sort keyvalue in the VCF file
+  
+    Python version:3.68
+    No other libiary needed.
 
 How to use:
 
