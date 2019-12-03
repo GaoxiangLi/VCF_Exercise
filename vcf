@@ -29,7 +29,7 @@ def parse_arguments(parser):
 
     parser.add_argument('--filename', default='./data/small_demo.vcf',
                         help='VCF file path')
-
+    # test code
     # parser.add_argument('--filename', default='./data/test1.vcf',
     #                     help='VCF file path')
     parser.add_argument('--saved_path', default='./data/',

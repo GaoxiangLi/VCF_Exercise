@@ -19,9 +19,11 @@ def sort(filename, key, order, saved_path):
                     num = float(num)
                     data[i].insert(0, num)
                 else:
-                    data[i].insert(0, 0.0)
+                    data[i].insert(0, 0.0)  # Use 0 to replace "."
                 flag = 1
                 break
+        #         since we need to sort the value, we must use a float number to replace "."
+        #         use 0 maybe not a good solution, still need more work to feed a good solution
         if flag == 0:  # to check if key is missing
             data[i].insert(0, 0)
 

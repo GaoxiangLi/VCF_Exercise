@@ -2,8 +2,8 @@ import re
 
 
 def vcfread(filename):
-    headers = []
-    data = []
+    headers = []  # for header begin with #
+    data = []  # for data
     with open(filename) as fh:
         # read file line by line
         for line in fh:
